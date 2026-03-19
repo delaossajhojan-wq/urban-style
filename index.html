@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tienda de Ropa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+    <button id="carrito-btn">🛒 Carrito (<span id="contador">0</span>)</button>
+</header>
+
+<h1>Urban Style</h1>
+
+<nav>
+    <ul class="menu">
+        <li>
+            <a href="acerca.html">Acerca de nosotros</a>
+        </li>
+
+        <li>
+            <a href="productos.html">Productos</a>
+            <ul class="submenu">
+                <li><a href="#">Pantalones</a></li>
+                <li><a href="#">Chaquetas</a></li>
+                <li><a href="#">Camisetas</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="servicios.html">Servicios</a>
+            <ul class="submenu">
+                <li><a href="#">Envíos</a></li>
+                <li><a href="#">Devoluciones</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="contacto.html">Contacto</a>
+            <ul class="submenu">
+                <li><a href="#">Formulario</a></li>
+                <li><a href="#">Ubicación</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+<section class="hero">
+    <h2>Descubre tu estilo</h2>
+    <p>Moda moderna y urbana</p>
+</section>
+
+<section class="productos" id="lista-productos">
+</section>
+
+<div id="carrito" class="carrito oculto">
+    <h2>Carrito</h2>
+    <ul id="items-carrito"></ul>
+    <p>Total: $<span id="total">0</span></p>
+    <button onclick="vaciarCarrito()">Vaciar</button>
+</div>
+
+<footer>
+    @2026 UrbanStyle - Barranquilla
+</footer>
+
+<script src="tienda.js"></script>
+
+</body>
+</html>
