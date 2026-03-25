@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Urban Style</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Urban Style</h1>
+</header>
+
+<button id="carrito-btn">🛒 (<span id="contador">0</span>)</button>
+
+<div id="carrito" class="carrito oculto">
+    <h2>Carrito</h2>
+    <ul id="items-carrito"></ul>
+    <p>Total: $<span id="total">0</span></p>
+
+    <!-- 🔥 AGREGADO -->
+    <button onclick="realizarPago()">Pagar</button>
+    <button onclick="vaciarCarrito()">Vaciar</button>
+</div>
+
+<!-- 🔥 AGREGADO -->
+<section class="pedidos">
+    <h2>Mis pedidos</h2>
+    <ul id="lista-pedidos"></ul>
+</section>
+
+<section class="buscador">
+    <input type="text" id="input-busqueda" placeholder="Buscar ropa...">
+</section>
+
+<section class="productos" id="lista-productos"></section>
+
+<section class="pagos">
+    <h2>Métodos de pago</h2>
+    <p>💳 Tarjeta</p>
+    <p>📱 Nequi</p>
+    <p>💰 Contra entrega</p>
+</section>
+
+<section class="rastreo">
+    <h2>Rastrear pedido</h2>
+    <input type="text" placeholder="Número de guía">
+    <button onclick="alert('Pedido en camino 🚚')">Rastrear</button>
+</section>
+
+<script src="prueba.js"></script>
+
+<footer class="footer">
+    <div class="footer-contenido">
+
+        <div class="footer-col">
+            <h3>Urban Style</h3>
+            <p>Ropa urbana con actitud. Lleva tu estilo al siguiente nivel.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Enlaces</h4>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Envíos</a></li>
+                <li><a href="#">Devoluciones</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Contacto</h4>
+            <p>📍 Barranquilla, Colombia</p>
+            <p>📧 urbanstyle@gmail.com</p>
+            <p>📱 +57 300 123 4567</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Síguenos</h4>
+            <div class="redes">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">TikTok</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Urban Style | Todos los derechos reservados</p>
+    </div>
+</footer>
+
+</body>
+</html>
